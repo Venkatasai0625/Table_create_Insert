@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>WEBPAGE_TABLE</h1>
+    <table border="auto">
+        <tr>
+            <th>id</th>
+            <th>TOPIC_NAME</th>
+            <th>NAME</th>
+            <th>URL</th>
+            <th>wpages</th>
+        </tr>
+        {% for wo in QLWO %}
+        <tr>
+            <td>{{wo.id}}</td>
+            <td>{{wo.topic_name}}</td>
+            <td>{{wo.name}}</td>
+            <td>{{wo.url}}</td>
+            <td>{{wo.wpages}}</td>
+        </tr>
+        {% endfor %}
+    </table> </center>
+</body>
+</html>

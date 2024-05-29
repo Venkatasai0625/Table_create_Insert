@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1>TOPICS_TABLE</h1>
+    <table border="auto">
+        <tr>
+            <th>TOPIC_NAME</th>
+            <th>EMAIL</th>
+        </tr>
+        {% for to in QLTO %}
+        <tr>
+            <td>{{to.topic_name}}</td>
+            <td>{{to.email}}</td>
+        </tr>
+        {% endfor %}
+    </table> </center>
+</body>
+</html>
